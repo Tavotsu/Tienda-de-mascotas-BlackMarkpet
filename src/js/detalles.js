@@ -1,6 +1,4 @@
-/**
- * Se ejecuta cuando el contenido de la página se ha cargado por completo.
- */
+
 document.addEventListener('DOMContentLoaded', () => {
     // Array de objetos. Ahora cada objeto representa un producto de la tienda.
     const productosBlackMarkpet = [
@@ -8,15 +6,15 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 'prod-001',
             nombre: 'Alimento Premium para Perro Adulto',
             descripcion: 'Croquetas balanceadas con 30% de proteína y vitaminas esenciales para una vida saludable.',
-            imagenUrl: 'https://cdnx.jumpseller.com/tu-mascota-y-algo-mas/image/43530555/premium_vitalcan-cordero-600x896-1__2_.jpg?1720122934', // Reemplaza con una imagen real del producto
-            precio: 29990, // Precio en número para poder formatearlo después
+            imagenUrl: 'https://cdnx.jumpseller.com/tu-mascota-y-algo-mas/image/43530555/premium_vitalcan-cordero-600x896-1__2_.jpg?1720122934', 
+            precio: 29990, 
             categoria: 'Alimentos'
         },
         {
             id: 'prod-002',
             nombre: 'Juguete Interactivo para Gatos',
             descripcion: 'Juguete dispensador de premios que estimula la mente y el instinto de caza de tu felino.',
-            imagenUrl: 'https://m.media-amazon.com/images/I/81JiN5D-XZL._AC_UF1000,1000_QL80_.jpg', // Reemplaza con una imagen real del producto
+            imagenUrl: 'https://m.media-amazon.com/images/I/81JiN5D-XZL._AC_UF1000,1000_QL80_.jpg', 
             precio: 12500,
             categoria: 'Juguetes'
         },
@@ -24,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 'prod-003',
             nombre: 'Cama Acolchada Antiestrés',
             descripcion: 'Cama extra suave y cómoda, diseñada para reducir la ansiedad y mejorar el descanso de tu mascota.',
-            imagenUrl: 'https://arenaparamascotas.cl/wp-content/uploads/2023/12/cama-antiestres-para-gato.jpeg', // Reemplaza con una imagen real del producto
+            imagenUrl: 'https://arenaparamascotas.cl/wp-content/uploads/2023/12/cama-antiestres-para-gato.jpeg', 
             precio: 19990,
             categoria: 'Accesorios'
         },
@@ -32,13 +30,13 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 'prod-004',
             nombre: 'Arena Sanitaria Aglomerante',
             descripcion: 'Arena de alta calidad con control de olores y gran poder de absorción. Fácil de limpiar.',
-            imagenUrl: 'https://www.worldpet.cl/wp-content/uploads/2020/12/Arena-FIT-baby-10k.png', // Reemplaza con una imagen real del producto
+            imagenUrl: 'https://www.worldpet.cl/wp-content/uploads/2020/12/Arena-FIT-baby-10k.png', 
             precio: 8990,
             categoria: 'Higiene'
         }
     ];
 
-    // Llamamos a la función para que dibuje los productos en la página
+    // 
     renderizarProductos(productosBlackMarkpet);
 });
 
@@ -59,9 +57,9 @@ function renderizarProductos(productos) {
     if (!contenedorProductos) return; 
     contenedorProductos.innerHTML = ''; 
 
-    // Iteramos sobre cada producto para crear su "tarjeta"
+    // Crear tarjetas para cada producto
     productos.forEach(producto => {
-        // Usamos la función formatCurrency para mostrar el precio
+        // FormatCurrency para mostrar el precio
         const precioFormateado = formatCurrency(producto.precio);
 
         const tarjetaHtml = `
