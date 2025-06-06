@@ -41,7 +41,7 @@ Para ver y trabajar en este proyecto en tu máquina local, sigue estos sencillos
 1.  **Descarga o Clona el Repositorio**
     ```bash
     # Si usas Git
-    git clone [https://URL-DE-TU-REPOSITORIO.git](https://URL-DE-TU-REPOSITORIO.git)
+    git clone https://github.com/Tavotsu/Tienda-de-mascotas-BlackMarkpet.git
     cd nombre-del-directorio
     ```
 
